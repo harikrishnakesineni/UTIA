@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Continent" representedClassName=".Continent" syncable="YES">
+        <attribute name="continentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="continentName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Country" representedClassName=".Country" syncable="YES">
+        <attribute name="continentId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="countryDescription" optional="YES" attributeType="String"/>
+        <attribute name="countryId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="countryImage" optional="YES" attributeType="String"/>
+        <attribute name="countryName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DonationForm" representedClassName=".DonationForm" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Continent" positionX="-54" positionY="27" width="128" height="59"/>
+        <element name="Country" positionX="-36" positionY="36" width="128" height="104"/>
+        <element name="DonationForm" positionX="-63" positionY="-18" width="128" height="104"/>
+    </elements>
+</model>
