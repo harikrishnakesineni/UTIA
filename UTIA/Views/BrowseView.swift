@@ -24,8 +24,12 @@ struct BrowseView: View {
        
         NavigationView {
             ZStack {
-                Color.green
-                    .edgesIgnoringSafeArea(.all)
+                if #available(iOS 15.0, *) {
+                    Color.teal
+                        .edgesIgnoringSafeArea(.all)
+                } else {
+                    // Fallback on earlier versions
+                }
 //            if #available(iOS 15.0, *) {
                 ScrollView {
                     //            ZStack {
@@ -56,7 +60,7 @@ struct BrowseView: View {
                                     
                                     Text("Asia")
                                         .fontWeight(.bold)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.white)
                                 }
                             }
                             NavigationLink(destination: ContinentPage(region: "Africa")) {
@@ -70,7 +74,7 @@ struct BrowseView: View {
                                     
                                     Text("Africa")
                                         .fontWeight(.bold)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.white)
                                 }
                             }
                         }
@@ -87,7 +91,7 @@ struct BrowseView: View {
                                     
                                     Text("North America")
                                         .fontWeight(.bold)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.white)
                                 }
                             }
                             NavigationLink(destination: ContinentPage(region: "South America")) {
@@ -101,7 +105,7 @@ struct BrowseView: View {
                                     
                                     Text("South America")
                                         .fontWeight(.bold)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.white)
                                 }
                             }
                             
@@ -118,8 +122,10 @@ struct BrowseView: View {
                                         .clipShape(Circle())
                                     
                                     Text("Europe")
+//                                        .font(.system(size: 25.0))
                                         .fontWeight(.bold)
-                                        .foregroundColor(.blue)
+                                        .foregroundColor(.white)
+                                        
                                 }
                             }
                         }
