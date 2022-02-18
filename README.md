@@ -1,5 +1,5 @@
 # UTIA
-UTIA, Underprivileged the information app
+UTIA, Underprivileged the information app.
 Our topic for this project was on Poverty and Inequality. The research question was: 
 How has COVID-19 affected poverty in different countries?
 The reason we chose this topic was to make it known of the increasing poverty rate caused by the ongoing pandemic which has plagued many inhabitants and 
